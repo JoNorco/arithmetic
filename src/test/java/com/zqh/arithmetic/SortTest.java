@@ -73,4 +73,14 @@ public class SortTest {
 
         System.out.println(Arrays.toString(arr));
     }
+
+    @Test
+    public void testHeapSort() {
+        System.out.println(Arrays.toString(arr));
+
+        HeapSort hs = new HeapSort();
+        hs.sort(arr);
+
+        System.out.println(Arrays.toString(arr));
+    }
 }
