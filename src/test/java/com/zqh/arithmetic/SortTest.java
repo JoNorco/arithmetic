@@ -1,6 +1,7 @@
 package com.zqh.arithmetic;
 
 import com.zqh.arithmetic.sort.BubbleSort;
+import com.zqh.arithmetic.sort.InsertionSort;
 import com.zqh.arithmetic.sort.SelectionSort;
 import org.junit.Test;
 
@@ -31,6 +32,16 @@ public class SortTest {
 
         BubbleSort bs = new BubbleSort();
         bs.sort(arr);
+
+        System.out.println(Arrays.toString(arr));
+    }
+
+    @Test
+    public void testInsertionSort() {
+        System.out.println(Arrays.toString(arr));
+
+        InsertionSort is = new InsertionSort();
+        is.sort(arr);
 
         System.out.println(Arrays.toString(arr));
     }
