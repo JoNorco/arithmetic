@@ -3,6 +3,7 @@ package com.zqh.arithmetic;
 import com.zqh.arithmetic.sort.BubbleSort;
 import com.zqh.arithmetic.sort.InsertionSort;
 import com.zqh.arithmetic.sort.SelectionSort;
+import com.zqh.arithmetic.sort.ShellSort;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -42,6 +43,16 @@ public class SortTest {
 
         InsertionSort is = new InsertionSort();
         is.sort(arr);
+
+        System.out.println(Arrays.toString(arr));
+    }
+
+    @Test
+    public void testShellSort() {
+        System.out.println(Arrays.toString(arr));
+
+        ShellSort ss = new ShellSort();
+        ss.sort(arr);
 
         System.out.println(Arrays.toString(arr));
     }
