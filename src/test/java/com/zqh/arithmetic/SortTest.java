@@ -1,9 +1,6 @@
 package com.zqh.arithmetic;
 
-import com.zqh.arithmetic.sort.BubbleSort;
-import com.zqh.arithmetic.sort.InsertionSort;
-import com.zqh.arithmetic.sort.SelectionSort;
-import com.zqh.arithmetic.sort.ShellSort;
+import com.zqh.arithmetic.sort.*;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -53,6 +50,16 @@ public class SortTest {
 
         ShellSort ss = new ShellSort();
         ss.sort(arr);
+
+        System.out.println(Arrays.toString(arr));
+    }
+
+    @Test
+    public void testQuickSort() {
+        System.out.println(Arrays.toString(arr));
+
+        QuickSort qs = new QuickSort();
+        qs.sort(arr, 0, arr.length - 1);
 
         System.out.println(Arrays.toString(arr));
     }
