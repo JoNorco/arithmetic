@@ -63,4 +63,14 @@ public class SortTest {
 
         System.out.println(Arrays.toString(arr));
     }
+
+    @Test
+    public void testMergeSort() {
+        System.out.println(Arrays.toString(arr));
+
+        MergeSort ms = new MergeSort();
+        ms.sort(arr);
+
+        System.out.println(Arrays.toString(arr));
+    }
 }
